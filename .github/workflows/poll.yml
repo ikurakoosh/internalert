@@ -26,7 +26,10 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-        run: python intern_alert.py
+        run: |
+          echo "token length: ${#TELEGRAM_BOT_TOKEN}"
+          echo "chat id length: ${#TELEGRAM_CHAT_ID}"
+          python intern_alert.py
       - name: Persist state
         run: |
           git config user.name  "intern-alert-bot"
