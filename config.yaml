@@ -34,7 +34,7 @@ filters:
     - chief of staff
 
   # Require an internship signal in the title. Keeps precision high.
-  require_intern_term: true
+  require_intern_term: false
   intern_terms:
     - intern
     - internship
