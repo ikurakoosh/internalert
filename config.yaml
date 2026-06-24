@@ -17,21 +17,7 @@ filters:
   # A posting's title must contain at least one of these (case-insensitive).
   # Leave [] to match ALL titles (rely on intern_terms instead).
   role_keywords:
-    - product manager
-    - product management
-    - apm
-    - associate product
-    - product strategy
-    - product operations
-    - strategy & operations
-    - strategy and operations
-    - business operations
-    - biz ops
-    - venture capital
-    - vc intern
-    - founder associate
-    - founding associate
-    - chief of staff
+    - data
 
   # Require an internship signal in the title. Keeps precision high.
   require_intern_term: false
