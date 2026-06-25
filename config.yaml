@@ -17,11 +17,28 @@ filters:
   # A posting's title must contain at least one of these (case-insensitive).
   # Leave [] to match ALL titles (rely on intern_terms instead).
   role_keywords:
-    - data
+    - product manager
+    - product management
+    - apm
+    - associate product
+    - product strategy
+    - product operations
+    - strategy & operations
+    - strategy and operations
+    - business operations
+    - biz ops
+    - venture capital
+    - vc intern
+    - founder associate
+    - founding associate
+    - chief of staff
+    - 
+
 
   # Require an internship signal in the title. Keeps precision high.
-  require_intern_term: false
+  require_intern_term: true
   intern_terms:
+    - summer intern
     - intern
     - internship
     - co-op
@@ -29,6 +46,7 @@ filters:
     - coop
     - apprentice
     - summer 2027
+    - summer 
 
   # Reject if the title contains any of these (kills senior/FT false positives).
   # Keep this list free of substrings that appear in roles you WANT.
